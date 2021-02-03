@@ -1,0 +1,31 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "Application to create and log burgers",
+  "main": "burger.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mathisshayy/burger.git"
+  },
+  "keywords": [
+    "mysql",
+    "express",
+    "handlebars",
+    "database"
+  ],
+  "author": "Shay Mathis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mathisshayy/burger/issues"
+  },
+  "homepage": "https://github.com/mathisshayy/burger#readme",
+  "dependencies": {
+    "express-handlebars": "^5.2.0",
+    "mysql": "^2.18.1",
+    "script": "^0.1.4",
+    "start": "^5.1.0"
+  }
+}
