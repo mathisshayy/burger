@@ -32,7 +32,7 @@ router.get("/", function(req, res) {
   
     console.log("condition", condition);
   
-    bureger.insertOne({
+    burger.insertOne({
       devour: req.body.devour
     }, condition, function(result) {
       if (result.changedRows == 0) {
