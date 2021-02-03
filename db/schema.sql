@@ -8,3 +8,8 @@ CREATE TABLE burgers (
     devoured BOOLEAN,
     PRIMARY KEY(id)
 );
+
+USE burgers_db;
+
+ALTER TABLE `burgers_db`.`burgers` 
+RENAME TO  `burgers_db`.`burger` ;
