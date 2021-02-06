@@ -1,21 +1,21 @@
-
 <div class="container-fluid">
     
         <div class="jumbotron">
             <div class="row">
                 <div class="col-sm-5">
-                    <h1>Eat Da Burger! </h1>
+                    <h1>Eat Da Burger!</h1>
                     <hr>
                     <br>
-                    <h2> Place your order</h2><br>
+                    <h2> Place your order! </h2><br>
                 
                     <form class="create-form">
 
                         <div class="input-group">
                             
-                            <input class="form-control" type="input" placeholder="Burger Type" id="nb" >
-                            <span class="input-group-addon"><button type="submit" class="btn">ORDER</button></span>
+                            <input class="form-control" type="input" placeholder="burger" id="newburger" >
+                            <span class="input-group-addon"><button type="submit" class="btn  btn-outline-dark">Order</button></span>
                         </div>
+
 
                     </form> 
                 </div> <br>  
@@ -24,7 +24,7 @@
 
                 </div> 
                 <div class="col-sm-5" id="imgid">
-                    <img src="../public/assets/img/burgerspic.png" alt="burgerspic" style="height: 200px;width:400px;">
+                    <img src="/public/assets/img/burgerspic.png" alt="burgerspic">
                 </div>
             </div> 
         </div>        
@@ -35,7 +35,7 @@
     <div class="row">
         <div class="col-sm-6">
             <div class="panel panel-default">
-                <div class="panel-heading" id="order"><strong>Order Your Burger</strong>
+                <div class="panel-heading" id="eat"><strong>Order Your Burger</strong>
                 </div>
                 <div class="panel-body">
 
@@ -44,7 +44,7 @@
                         {{#unless devoured}}
 
                         <span><strong> {{this.id}} - {{this.burger_name}}</strong></span>
-                        <button type="button" class="btn btn-outline-success eatB" id="eatbtn" data-id="{{this.id}}"
+                        <button type="button" class="btn btn-outline-success " id="devourbtn" data-id="{{this.id}}"
                             data-newDevoured="{{devour}}">EAT</button>
                         <hr>
                         {{/unless}}
@@ -57,7 +57,6 @@
         <div class="col-sm-6">
             <div class="panel panel-default">
                 <div class="panel-heading" id="done"><strong>Burger is Ready for Pick Up</strong>
-                    <p>Remove order when done EATING</p>
                 </div>
                 <div class="panel-body">
                     <ul>
@@ -78,4 +77,5 @@
         </div>
 
     </div>
-</div>
+</div>    
+   
