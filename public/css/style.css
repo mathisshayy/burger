@@ -1,0 +1,24 @@
+*{
+font-family: 'Sriracha', cursive;
+}
+body {
+    background-color:  blue;
+}
+
+.jumbotron {
+    background-color: orange;
+    color: #ffffff;
+    text-align: left;
+  }
+  
+  
+
+  #burgerpic {
+    float: right;
+    width: 250px;
+    }
+
+
+    .btn-success, .btn-danger {
+        margin-left: 10px;
+    }

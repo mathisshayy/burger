@@ -32,7 +32,7 @@ router.get("/", function(req, res) {
   
     console.log("condition", condition);
   
-    burger.insertOne({
+    burger.updateOne({
       devour: req.body.devour
     }, condition, function(result) {
       if (result.changedRows == 0) {
@@ -47,7 +47,7 @@ router.get("/", function(req, res) {
   router.delete("/api/burgers/:id", function(req, res) {
     var condition = "id = " + req.params.id;
   
-    burger.delete(condition, function(result) {
+    burger.deleteBurger(condition, function(result) {
       if (result.affectedRows == 0) {
         // 404
         return res.status(404).end();
